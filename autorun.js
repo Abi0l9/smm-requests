@@ -45,7 +45,7 @@ const ping = async () => {
         console.log("pinging...");
         const req = await axios.get(`${hostUrl()}/api`);
         console.log(req.data);
-    }, 60000);
+    }, 600000);
 };
 
 const postToMaral = async () => {
