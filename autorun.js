@@ -45,7 +45,7 @@ const ping = async () => {
         console.log("pinging...");
         const req = await axios.get(`${hostUrl()}/api`);
         console.log(req.data);
-    }, 600000);
+    }, 60000);
 };
 
 const postToMaral = async () => {
@@ -73,7 +73,7 @@ const postToOxys = async () => {
     const secondContent = createContent("message2", 1, 2);
 
     await schedule(12, 0, firstContent, "oxys");
-    await schedule(20, 30, secondContent, "oxys");
+    await schedule(21, 30, secondContent, "oxys");
 };
 
 const postToMatcha = async () => {
